@@ -86,7 +86,7 @@ export default {
      this.APIIsSelected = true
      this.localIsSelected = false
      this.isIntroVisible = false
-      fetch('https://opentdb.com/api.php?amount=10&category=27&type=multiple', {
+      fetch('https://opentdb.com/api.php?amount=20&category=27&type=multiple', {
         method: 'get'
       })
         .then((response) => {
@@ -100,23 +100,6 @@ export default {
   },
   mounted: function() {
 
-    // if (this.localIsSelected){
-    //   fetch('https://opentdb.com/api.php?amount=10&category=27&type=multiple', {
-    //     method: 'get'
-    //   })
-    //     .then((response) => {
-    //       return response.json()
-    //     })
-    //     .then((jsonData) => {
-    //       this.questions = jsonData.results
-    //       console.log(this.questions);
-    //     })
-    // } 
-
-  // if (this.APIIsSelected){
-  //   console.log(DB);
-  //   this.questions = DB
-  // }
   }
 }
 </script>

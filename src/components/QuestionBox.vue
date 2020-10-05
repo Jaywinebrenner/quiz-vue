@@ -25,7 +25,9 @@
       >
         Submit
       </b-button>
-      <b-button @click="next" variant="success">
+      <b-button 
+      @click="next" variant="success"
+      :disabled="answered === false">
         Next
       </b-button>
     </b-jumbotron>
@@ -45,7 +47,8 @@ export default {
       selectedIndex: null,
       correctIndex: null,
       shuffledAnswers: [],
-      answered: false
+      answered: false,
+
     }
   },
   computed: {
